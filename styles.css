@@ -150,12 +150,15 @@
     margin: auto;
   }
   .resume-button{
-    background-color:#ccc;
+    background-color:tomato;
   border-radius: 100px;
   padding: 1%;
   
   }
-  .resume-button:hover{color:#000!important;background-color: rgb(89, 215, 202)!important}
+  .resume-button:hover{
+    color:#000!important;
+    background-color: rgb(89, 215, 202)!important
+  }
   .main-btn .btn-text {
     padding: 0 2rem;
   }
