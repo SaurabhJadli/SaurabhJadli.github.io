@@ -182,19 +182,19 @@
   body{
 
     background-repeat: no-repeat;
-    background-image: url('img/saurabh_jadli.png');
+    background-image: url('img/pro1.png');
     min-height: 100%;
   }
   @media only screen and (max-width: 768px) {
     body {
       background-repeat: no-repeat;
-      background-image: url('img/saurabh_jadli.png');
+      background-image: url('img/pro1.png');
       background-size: cover;
       background-size: 100%;
   }
 }
   .tag-line {
-    margin-left: 71%;
+    margin-left: 73%;
   }
   @media only screen and (max-width: 768px) {
     .tag-line {
