@@ -9,3 +9,9 @@ can be assess using internet and browsers.</p>
                                    <li>Enter cmd on terminal "git pull [repo url]</li>
                                   <li>Right click "index.html" file >> open with [any browser]</li>
                                    </li>
+
+<h2>Technologies Used:</h2>
+<li>HTML5</li>
+<li>Css</li>
+<li>Bootsrap</li>
+<li>github</li>
