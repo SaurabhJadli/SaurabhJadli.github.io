@@ -221,6 +221,7 @@
     background-color: #000;
     margin-top: 12%;
     font-family: Comic Sans MS, Comic Sans, sans-serif;
+    padding: 20px;
   }
   @media only screen and (min-width: 768px) {
     .aboutMe {
@@ -473,8 +474,47 @@
   color: #ffff;
   font-size: 25px;
   margin-left: 25%;
- 
 }
+
+.project {
+padding: 20px;
+}
+.proheading {
+  color: #0c0753;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display:inline-flex;
+   }
+
+/* Style for the image */
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style for the card content */
+.card-content {
+    padding: 16px;
+}
+
+/* Style for the title */
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Style for the text */
+.card-text {
+    color: #a00e0e;
+}
+ 
 .contact{
   background-image: url('https://i.giphy.com/media/Q5pH4UmOiQciITstXU/giphy.webp');
    background-repeat: no-repeat;
