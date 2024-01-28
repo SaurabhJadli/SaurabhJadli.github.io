@@ -65,8 +65,7 @@
     color: var(--main-white);
   }
   
-  h1,
-  h2 {
+  h1, h2 {
     font-family: Comic Sans MS, Comic Sans, sans-serif;
     font-weight: 700;
     text-align: center;
@@ -479,9 +478,11 @@
 .project {
 padding: 20px;
 }
+
 .proheading {
   color: #0c0753;
 }
+
 .card {
     border: 1px solid #ccc;
     border-radius: 8px;

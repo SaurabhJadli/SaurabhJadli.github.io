@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>rps Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="rpsGame.css">
+    <!-- Icon -->
+    <link rel="icon" href="img/default_rps.png" >
+
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-primary fixed-top" id="home">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">RPS Game</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Welcome!</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://saurabhjadli.github.io/">Back to Portfolio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Projects
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Billing sys</a></li>
+                    <li><a class="dropdown-item" href="#">comming soon</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+     
+      <!-- Thanks! -->
+      <div class="thanks">
+        <h1>Thanks for visiting!</h1>
+      </div>
+     <!-- Carousel -->
+      <div id="carouselExampleIndicators" class="carousel slide pad carousel-fade">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/default_rps.png" class="d-block " alt="game default img" height="650px" width="1500px">
+          </div>
+          <div class="carousel-item">
+            <img src="img/comWin.png" class="d-block w-100" alt="computer wins" height="650px" width="20px">
+          </div>
+          <div class="carousel-item">
+            <img src="img/draw.png" class="d-block w-100" alt="draw match" height="650px" width="20px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- About Game -->
+      <about class="about">
+        <h2>About Game:</h2>
+        <p>rps short form for Rock Paper Scissor Game. Is game made 
+          using python programming language. Its free and safe. exe for 
+          Windows OS is also avilable.
+        </p>
+        <p>Also source code for this game is also avilable. Enjoy!</p>
+      </about>
+
+      <!-- Download btns -->
+      <download>
+        <center>
+          <a href="">
+            <button type="button" class="btn btn-primary btn-lg">Download exe</button>
+          </a>
+          <a href="RockPaperSicssor_Game.zip" download="RPSgameSource">
+            <button type="button" class="btn btn-secondary btn-lg">Download Source code</button>
+          </a>
+        </center>
+      </download>
+   
+
+      <footer>
+        <div class="contact-icons">
+
+          <a href="../fb.html" target="_blank">
+          <i style="font-size: 50px; padding: 20px;" class="fab fa-facebook-f"></i></a>
+  
+          <a href="https://github.com/SaurabhJadli" target="_blank">
+          <i style="font-size: 50px; padding: 20px;" class="fab fa-github"></i></a>
+  
+          <a href="https://www.instagram.com/saurabh_jadli_/" target="_blank">
+          <i style="font-size: 50px; padding: 20px;" class="fab fa-instagram"></i></a>
+  
+          <a href="https://www.linkedin.com/in/saurabh-jadli-373565233?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsMuGOTkXTxSM8uN4n0hLZw%3D%3D" target="_blank">
+          <i style="font-size: 50px; padding: 20px;" class="fab fa-linkedin"></i></a>
+  
+          <a href="../twi.html" target="_blank">
+          <i style="font-size: 50px; padding: 20px;" class="fab fa-twitter"></i></a>
+  
+  </div>
+  
+      </footer>
+      
+  </body>
+</html>
