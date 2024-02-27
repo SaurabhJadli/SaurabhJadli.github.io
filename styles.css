@@ -58,7 +58,7 @@
   /* Base styles */
   
   body {
-    font-family: Comic Sans MS, Comic Sans, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.8rem; /* 18px */
     font-weight: 400;
     line-height: 1.4;
@@ -131,6 +131,7 @@
   
   .nav-list a:hover {
     background: var(--main-blue);
+    color:blueviolet;
   }
   .heading {
     color: #4CAF50;
@@ -156,8 +157,9 @@
   }
   .resume-button:hover{
     color:#000!important;
-    background-color: rgb(89, 215, 202)!important
-  }
+    background-color: rgb(89, 215, 202)!important;
+    cursor: pointer;
+    }
   .main-btn .btn-text {
     padding: 0 2rem;
   }
@@ -475,8 +477,14 @@
   margin-left: 25%;
 }
 
+/* Projects Section */
+
 .project {
 padding: 20px;
+}
+
+.project a:hover {
+  color: red;
 }
 
 .proheading {
@@ -492,6 +500,7 @@ padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display:inline-flex;
    }
+
 
 /* Style for the image */
 .card img {
@@ -515,6 +524,9 @@ padding: 20px;
 .card-text {
     color: #a00e0e;
 }
+
+   /* Projects Section Ends */
+
  
 .contact{
   background-image: url('https://i.giphy.com/media/Q5pH4UmOiQciITstXU/giphy.webp');
@@ -543,6 +555,7 @@ padding: 20px;
    min-height: 250px;
    margin: 45px 15px 0 15px;
 }
+
 .form {
   background: rgba(0,200,150,0.7);
   padding: 2.5rem 0.625rem;
@@ -560,15 +573,14 @@ padding: 20px;
     margin: 1px 2px 1px 0px;
   }
 }
-input,
-button,
-select,
-textarea {
+
+input, button, select, textarea {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
+
 .form-control {
   display: block;
   width: 100%;
@@ -588,9 +600,11 @@ textarea {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
+
 button {
   border: none;
 }
+
 .submit-button {
   display: block;
   width: 100%;
@@ -601,6 +615,8 @@ button {
   cursor: pointer;
   margin-top: 20px;
 }
+
+/* Footer */
 footer {
   font-weight: 300;
   display: flex;
