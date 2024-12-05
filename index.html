@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Saurabh Jadli's Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurabh Jadli's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,276 +14,401 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <!-- Icon -->
-<link rel="icon" href="https://wallpapers.com/wp-content/themes/wallpapers.com/src/fav-icon.svg" >
+<link rel="icon" href="img/pro1.png" >
+
 </head>
 <body>
-    <hr color="red">
-     <!-- START NAV -->
-     <a href="#">
-        <div class="heading">
-            Hello WOrld !
-        </div>
-     </a>
-     
-     <nav id="navbar" class="nav">
+<nav class="navbar navbar-expand-lg sticky-top rounded" style="background-color: #e3f2fd;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Saurabh</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            more..
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#contact">Contact me</a></li>
+            <li><a class="dropdown-item" href="#messageMe">Send me a message</a></li>
+            <li><a class="dropdown-item" href="projects/morePro.html">My projects</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-        <ul class="nav-list">
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#ex">Exp..</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- END NAV -->
-
-      <!-- Heading -->
+<!-- Heading -->
   <!-- Header -->
-  <header id="home" class="header">
 
-    <h1 class="jumbo"><b>I'm<br>Saurabh Jadli</b></h1>
-    <p class="tag-line">Programmer and Problem Solver.</p><br>
-    <a href="Resume.pdf" download="Saurabh_Jadli_Resume" target="_blank" class="resume">
-    <button class="resume-button">
-      <i class="fa fa-download"></i> Download Resume
-    </button></a>
-  </header>
+  <div class="card mb-3 m-0" style="width: 100%;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="img/pro1.png" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+
+        <div class="card-body position-absolute top-50 start-50 translate-middle intro">
+          <h1 class="card-title">Hi</h1>
+          <h1 class="card-title"> <b>I'm Saurabh Jadli</b></h1>
+          <p class="card-text">Programmer and Problem Solver.          </p>
+          <a href="Resume.pdf" download="Saurabh_Jadlis_Resume" target="_blank" class="resume">
+            <button class="resume-button p-3 border-0 btn-lg">
+              <i class="fa fa-download"></i> Download Resume
+            </button></a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <!-- Header -->
+<hr>
+<center><h1><b>About Me</b></h1></center>
+<br>
 
-<!--About Me Start Here-->
-
-<section class="aboutMe" id="about">
-    <h2 class="aboutMeHeading">About Me</h2>
-    <img class="aboutMePik" src="img/day.png" alt="me in jacket"/>
-    <p class="aboutMePara">	Thanks for your interest, here is a quick story of me and this website.
-       Saurabh Jadli An IT student created this portfolio site. He loves to solve programming problems in most efficient ways. Apart from this site, he has worked with many IT peoples and worked on many projects.<br>
-        I do my work mainly in Javascript and Python. Python and Data Structure & Algorithm are my stronger section. Besides these I know Web Development, LINUX, Networking and Database as well.<br>
-        This website is basically one of my Web Development project which is built using HTML, CSS, Bootstrap and Javascript. This website is hosted on Github. Thanks again for reading this, because of people like you, it exists and prospers!<br>
-       Cheers,</p><br><br>
-</section>
- <!--About(end)-->
-
- <!--MySkills(starts)-->
- <main class="main">
-    <section class="container about" id="about">
-        <div class="about-container">
-
-<div class="about-stats">
-    <h2 id="skills">My Skills</h2>
-
-    <div class="progress-bars">
-        <div class="progress-bar">
-            <p class="prog-title">HTML</p>
-            <div class="progress-con">
-                <p class="prog-text">80%</p>
-                <div class="progress">
-                    <span class="html"></span>
-                </div>
-            </div>
+<div class="card mb-3 border-0 p-4" style="max-width: 120rem;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="img/day.png" class="img-fluid rounded" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <p class="card-text fs-4 p-4">	Thanks for your interest, here is a quick story of me and this website.
+            Saurabh Jadli An IT student created this portfolio site. He loves to solve programming problems in most efficient ways. Apart from this site, he has worked with many IT peoples and worked on many projects.<br><br>
+            I do my work mainly in Javascript and Python. Python and Data Structure & Algorithm are my stronger section. Besides these I know Web Development, LINUX, Networking and Database as well. <br><br>
+            This website is basically one of my Web Development project which is built using HTML, CSS, Bootstrap and Javascript. This website is hosted on Github. Thanks again for reading this, because of people like you, it exists and prospers!
+          <br>
+       Cheers,</p>
         </div>
-        <div class="progress-bar">
-            <p class="prog-title">CSS</p>
-            <div class="progress-con">
-                <p class="prog-text">85%</p>
-                <div class="progress">
-                    <span class="css"></span>
-                </div>
-            </div>
-        </div>
-        <div class="progress-bar">
-            <p class="prog-title">javascript</p>
-            <div class="progress-con">
-                <p class="prog-text">75%</p>
-                <div class="progress">
-                    <span class="js"></span>
-                </div>
-            </div>
-        </div>
-        <div class="progress-bar">
-            <p class="prog-title">React js</p>
-            <div class="progress-con">
-                <p class="prog-text">75%</p>
-                <div class="progress">
-                    <span class="react"></span>
-                </div>
-            </div>
-        </div>
-        <div class="progress-bar">
-            <p class="prog-title">Node js</p>
-            <div class="progress-con">
-                <p class="prog-text">82%</p>
-                <div class="progress">
-                    <span class="node"></span>
-                </div>
-            </div>
-        </div>
-        <div class="progress-bar">
-            <p class="prog-title">Python</p>
-            <div class="progress-con">
-                <p class="prog-text">80%</p>
-                <div class="progress">
-                    <span class="python"></span>
-                </div>
-            </div>
-        </div>
-        <div class="progress-bar">
-            <p class="prog-title">SQL</p>
-            <div class="progress-con">
-                <p class="prog-text">76%</p>
-                <div class="progress">
-                    <span class="networking"></span>
-                </div>
-            </div>
-        </div>
-        <div class="progress-bar">
-            <p class="prog-title">Linux</p>
-            <div class="progress-con">
-                <p class="prog-text">78%</p>
-                <div class="progress">
-                    <span class="linux"></span>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
+<hr>
+<!-- Skills starts  -->
+<div class="main" id="skills">
+<br><br>
+ <center><h1><b>My Skills</b></h1></center>
+<div class="mb-4">
+  <p class="m-1 fs-5">HTML</p> 
+  <div class="progress" role="progressbar" aria-label="success example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="height: 10px">
+    <div class="progress-bar text-dark" style="width: 80%; background-color: #27AE60;"><b>80%</b></div>
+  </div> 
 </div>
+ 
+<div class="mb-4">
+ <p class="m-1 fs-5">CSS</p> 
+ <div class="progress" role="progressbar" aria-label="success example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="height: 10px">
+  <div class="progress-bar text-dark" style="width: 85%; background-color: #27AE60;"><b>85%</b></div>
+</div> 
+</div> 
+
+<div class="mb-4">
+<p class="m-1 fs-5">JAVASCRIPT</p> 
+  <div class="progress" role="progressbar" aria-label="success example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 10px">
+    <div class="progress-bar text-dark" style="width: 75%; background-color: #27AE60;"><b>75%</b></div>
+  </div> 
+</div> 
+
+ <div class="mb-4">
+ <p class="m-1 fs-5">REACT JS</p> 
+ <div class="progress" role="progressbar" aria-label="success example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 10px">
+  <div class="progress-bar text-dark" style="width: 75%; background-color: #27AE60;"><b>75%</b></div>
+</div> 
+</div> 
+
+<div class="mb-4">
+<p class="m-1 fs-5">NODE JS</p> 
+  <div class="progress" role="progressbar" aria-label="success example" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="height: 10px">
+    <div class="progress-bar text-dark" style="width: 82%; background-color: #27AE60;"><b>82%</b></div>
+  </div> 
+</div> 
+
+ <div class="mb-4">
+ <p class="m-1 fs-5">PYTHON</p> 
+ <div class="progress" role="progressbar" aria-label="success example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="height: 10px">
+ <div class="progress-bar text-dark" style="width: 80%; background-color: #27AE60;"><b>80%</b></div>
+</div> 
+</div> 
+
+<div class="mb-4">
+<p class="m-1 fs-5">SQL</p> 
+  <div class="progress" role="progressbar" aria-label="success example" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100" style="height: 10px">
+    <div class="progress-bar text-dark" style="width: 76%; background-color: #27AE60;"><b>76%</b></div>
+  </div> 
+</div> 
+
+ <div class="mb-4">
+ <p class="m-1 fs-5">LINUX</p> 
+ <div class="progress" role="progressbar" aria-label="success example" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="height: 10px">
+  <div class="progress-bar text-dark" style="width: 78%; background-color: #27AE60;"><b>78%</b></div>
+</div> 
+</div> 
+<br><br><br>
 </div>
-</section>
-</main>
 
-<!--MySkills(end)-->
+<!-- Skills ends here  -->
 
-<section class="aboutMe" id="ex">
-    <h2 class="aboutMeHeading">Experience</h2>
-    <img class="ex-pik" src="https://media3.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif?cid=790b7611a0e9bbead0610adcbcf4e42eea7098ff8064db9e&rid=giphy.gif&ct=g" alt="coding-boy"/>
-    <p class="ex"><b>Pursuing MCA from Chandigarh University.</b><br>
-         Grade A+ University<br>
-        Done many Industrial Trainings & Projects<br><br>
-        <b>This portfolio web site is also created by me</b><br>
-        Html & Css is used in this site<br>
-        Hosted on GitHub<br><br>
-       <b> 3+ Years of Linux Experience<br></b>
-        I have used many Linux based OS, like<br>
-        Ubuntu, Kali, Zorin, Mint, Fedora & Parrot OS</p><br><br>
-</section>
+<!-- Experience starts  -->
+
+<hr>
+<br><br>
+<center><h1 id="experience"><b>Experience</b></h1></center>
+
+<div class="card mb-3 border-0 p-5" style="max-width: 120rem;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://media3.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif?cid=790b7611a0e9bbead0610adcbcf4e42eea7098ff8064db9e&rid=giphy.gif&ct=g" class="img-fluid rounded" 
+        alt="experience coding bro"
+         />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <p class="card-text">	
+            <b class="fs-4">
+              Pursuing MCA from Chandigarh University.
+          </b>
+          <ul class="fs-5">
+            <li>
+              Grade A+ University 
+            </li>
+
+            <li>
+              Done many Industrial Trainings & Projects
+            </li>
+          </ul>
+
+          <br> <br>
+
+          <b class="fs-4">
+            This portfolio web site is also created by me <br>
+        </b>
+        <ul class="fs-5">
+          <li>
+            Technology used: HTML, CSS, Bootstrap, git and GitHub.
+          </li>
+
+          <li>
+            Hosted on GitHub
+          </li>
+        </ul>
+          <br> <br>
+
+          <b class="fs-4">
+            3+ Years of Linux Experience <br> 
+        </b>
+        <ul class="fs-5">
+          <li>
+            Linux Based OS used by me: Ubuntu, Kali, Zorin, Mint, Fedora & Parrot OS            <br>
+          </li>
+        </ul>
+
+        <br><br>
+
+        <b class="fs-4">
+          Worked on many project during my course<br> 
+      </b>
+      <ul class="fs-5">
+        <li>
+          CLI calculator (c++)
+        </li>
+
+        <li>
+          GUI calculator (Java, swing and jFrame)
+        </li>
+
+        <li>
+          Rock Paper Scissor Game (Python and tkinter)
+        </li>
+
+        <li>
+          Fire Fighting Robot (IOT, C++, Arduino)
+        </li>
+
+        <li>
+          Analysis of US market (Tableau)
+        </li>
+
+        <li>
+          Travel managing web app (React js, Bootstrap, API's, Node js and Mongo db)
+        </li>
+
+        <li>
+          And many more...
+        </li>
+      </ul>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Experience ends here  -->
 
 <!-- Projects starts  -->
-<div class="project">
-    <h2 class="proheading" id="projects">Projects</h2>
-<center>
-    <div class="card">
-        <!-- Image -->
-        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2sxbmRjc2gxM2Vtc2pqN2tneWNpM2hpZXVzcGNvZm9oOHQzb3E2aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MXrhsYo13HM6k/giphy.gif" alt="Card Image">
-        <!-- Card Content -->
-        <div class="card-content">
-            <!-- Title -->
-            <div class="card-title">Restaurant billing sys</div>
-            <!-- Text -->
-            <div class="card-text">Will help customer and shopkeeper to calculate bill easily.</div>
+
+<hr>
+<center class="p-5"><h1 id="projects" style="color: #0c0753;"><b>Projects</b></h1><br>
+
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card h-100 project-hover">
+                <!-- Image -->
+                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2sxbmRjc2gxM2Vtc2pqN2tneWNpM2hpZXVzcGNvZm9oOHQzb3E2aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MXrhsYo13HM6k/giphy.gif" class="card-img-top" alt="Card Image" height=200rem" width="50rem" >
+                <!-- Card Content -->
+          <div class="card-body">
+          <h5 class="card-title">Restaurant billing sys</h5>
+          <p class="card-text">Will help customer and shopkeeper to calculate bill easily.</p>
         </div>
+      </div>
     </div>
 
-
-    <a href="projects/rpsGame/rpsGame.html">
-        <div class="card">
-            <!-- Image -->
-            <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDRjeTNxZTVhb2NzMDh0cG96dGg2Ym1rMnozbG1qOXA3aXptNXNqeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l49JLqDArrAoVy4wM/giphy.gif" alt="RPS Game">
-            <!-- Card Content -->
-            <div class="card-content">
-                <!-- Title -->
-                <div class="card-title">R.P.S GAME</div>
-                <!-- Text -->
-                <div class="card-text">A Rock Paper Scissor Game, made using python programming.</div>
-            </div>
+    <a href="projects/rpsGame/rpsGame.html" class="link-offset-2 link-underline link-underline-opacity-0">
+    <div class="col">
+      <div class="card h-100 project-hover">
+                        <!-- Image -->
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDRjeTNxZTVhb2NzMDh0cG96dGg2Ym1rMnozbG1qOXA3aXptNXNqeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l49JLqDArrAoVy4wM/giphy.gif" alt="RPS Game" class="card-img-top" height=200rem" width="50rem">
+                     <!-- Card Content -->
+        <div class="card-body">
+          <h5 class="card-title">R.P.S GAME</h5>
+          <p class="card-text">A Rock Paper Scissor Game, made using python programming.</p>
         </div>
-    </a>
-   
+      </div>
+    </div>
+  </a>
 
-    
-    <a href="morePro.html">
-        <div class="card">
-            <!-- Image -->
-            <img src="img/more1.jpeg" alt="More">
-            <!-- Card Content -->
-            <div class="card-content">
-                <!-- Title -->
-                <div class="card-title">More..</div>
-                <!-- Text -->
-                <div class="card-text">Click here to visit and see my more projects.</div>
-            </div>
+  <a href="projects/Java_calculator/jCalc.html" class="link-offset-2 link-underline link-underline-opacity-0">
+    <div class="col">
+      <div class="card h-100 project-hover">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmJ3N2lxanZlNGV2ZTZud3dpd29mOGdvdm15aHljNmxqZWYwYXhuciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CiC5N2o57QVmLInd4J/giphy.webp" class="card-img-top" alt="java calculator" height=200rem" width="20rem">
+        <div class="card-body">
+          <h5 class="card-title">Java calculator</h5>
+          <p class="card-text">Java based calculator using swing and jFrame.</p>
         </div>
-    </a>
-   
+      </div>
+    </div>
+  </a>
+
+  <a href="projects/morePro.html" class="link-offset-2 link-underline link-underline-opacity-0">
+    <div class="col">
+      <div class="card h-100 project-hover">
+        <img src="img/more1.jpeg" class="card-img-top" alt="more projects" height=200rem" width="10rem">
+        <div class="card-body">
+          <h5 class="card-title">More Projects</h5>
+          <p class="card-text">View my all projects here.</p>
+        </div>
+      </div>
+    </div>
+  </a>
 </center>
-</div>
+
 <!-- Projects ends  -->
 
 
+<hr>
+
 <!--Contact Start Here-->
-<section class="contact" id="contact">
-<h2 class="aboutMeHeading">Contact Me</h2>
-<center>
-<div class="contact-info">
-    <p class=" c-icon"><i class="fa fa-map-marker fa-fw xxlarge" style="color:#4CAF50;"></i> Uttarakhand, India</p>
-    <p class=" c-icon"><i class="fa fa-phone fa-fw xxlarge" style="color:#4CAF50;"></i> Phone: +00 151515</p>
-    <p class=" c-icon"><i class="fa fa-envelope fa-fw xxlarge" style="color:#4CAF50;"> </i> Email: mail@mail.com</p>
-  </div>
-
-  </center>
-</section>
-
-<!-- Image of location/map -->
-
-  <!--<img src="img/kot_loc.png" class="loc-img" alt="My home town pik">-->
-  <div class="loc-img"></div>
-<div class="form">
-  <p>Lets get in touch. Send me a message:</p>
-  <form action="/action_page.php" target="_blank" class="touch-form">
-    <p><input class="form-control" type="text" placeholder="Name" required name="Name"></p>
-    <p><input class="form-control" type="email" placeholder="Email" required name="Email"></p>
-    <p><input class="form-control" type="text" placeholder="Subject" required name="Subject"></p>
-    <p><input class="form-control" type="text" placeholder="Message" required name="Message"></p>
-    <p>
-      <button class="submit-button" type="submit">
-        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-      </button>
-    </p>
-  </form>
-</div>
-<!-- End Contact Section -->
+  <div class="contact text-center" id="contact">
+  <h1 style="color: #0c0753;"><b>Contact Me</b></h1>
 <br><br>
+  <ul className="navbar-nav" style="list-style: none;">
+    <li className="m-4">
+    <img src="/img/contact.png" class="rounded-circle img-fluid category-img" alt="national_park" 
+    style="height: 5rem; width: 5rem;"/>
 
-<!-- Footer -->
-<!-- Footer -->
+        <h3>
+        Phone</h3>
+        <h4>248 123-4567</h4>
+    </li>
 
-<footer>
-    <div class="contact-icons">
+    <li className="m-4">
+    <img src="/img/email.png" class=" img-fluid category-img" alt="email logo" 
+    style="height: 5rem; width: 5rem;" />
 
-        <a href="fb.html" target="_blank">
-        <i style="font-size: 50px; padding: 20px;" class="fab fa-facebook-f"></i></a>
+        <h3>
+        Email</h3>
+        <h4>support@triply.com</h4>
+    </li>
 
-        <a href="https://github.com/SaurabhJadli" target="_blank">
-        <i style="font-size: 50px; padding: 20px;" class="fab fa-github"></i></a>
+    <li className="m-4">
+    <img src="/img/address.png" class="img-fluid category-img" alt="address logo" 
+    style="height: 5rem; width: 5rem;" />
 
-        <a href="https://www.instagram.com/saurabh_jadli_/" target="_blank">
-        <i style="font-size: 50px; padding: 20px;" class="fab fa-instagram"></i></a>
+        <h3>Address</h3>
+        <h4>Kharar, Mohali - India</h4>
+    </li>
+  </ul>
+  </div>
+    
+    <!-- Image of location/map -->
+    
+      <div class="loc-img"></div>
 
-        <a href="https://www.linkedin.com/in/saurabh-jadli-373565233?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsMuGOTkXTxSM8uN4n0hLZw%3D%3D" target="_blank">
-        <i style="font-size: 50px; padding: 20px;" class="fab fa-linkedin"></i></a>
+<hr>
 
-        <a href="twi.html" target="_blank">
-        <i style="font-size: 50px; padding: 20px;" class="fab fa-twitter"></i></a>
+      <form class="p-3 m-3 bg-info-subtle rounded" id="messageMe">
+        <h3>Lets get in touch. Send me a message:</h3>
 
-</div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
 
- <!-- End footer -->
-  </footer>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Message</label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
+          </div>
+
+  <div class="d-grid gap-2">
+    <button class="btn btn-primary" type="submit" style="width: 35%; margin: auto;">Submit</button>
+  </div>
+        
+      </form>
+
+      <footer class="rounded">
+        <center>
+        <div class="contact-icons">
+    
+            <a href="fb.html" target="_blank">
+            <i style="font-size: 50px; padding: 20px;" class="fab fa-facebook-f"></i></a>
+    
+            <a href="https://github.com/SaurabhJadli" target="_blank">
+            <i style="font-size: 50px; padding: 20px;" class="fab fa-github"></i></a>
+    
+            <a href="https://www.instagram.com/saurabh_jadli_/" target="_blank">
+            <i style="font-size: 50px; padding: 20px;" class="fab fa-instagram"></i></a>
+    
+            <a href="https://www.linkedin.com/in/saurabh-jadli-373565233?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsMuGOTkXTxSM8uN4n0hLZw%3D%3D" target="_blank">
+            <i style="font-size: 50px; padding: 20px;" class="fab fa-linkedin"></i></a>
+    
+            <a href="twi.html" target="_blank">
+            <i style="font-size: 50px; padding: 20px;" class="fab fa-twitter"></i></a>
+    
+    </div>
+</center>
+     <!-- End footer -->
+      </footer>
+
 </body>
 </html>
