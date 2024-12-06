@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>fireFightingRobot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Icon -->
+    <link rel="icon" href="fireFightingRobot.png" >
+
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-primary fixed-top" id="home">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">fire Fighting Robot</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Welcome!</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://saurabhjadli.github.io/">Back to Portfolio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Projects
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Billing sys</a></li>
+                    <li><a class="dropdown-item" href="#">comming soon</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>  
+     
+    
+     <!-- Image -->
+      <br>
+     <div class="d-flex justify-content-center">
+        <img src="fireFightingRobot.png" class="img-fluid rounded" alt="fireFightingRobot iot project" style="max-height: 40rem;" />
+
+     </div>
+         
+     <!-- Image Ends -->
+
+
+      <!-- About robot -->
+      <div class="p-5">
+        <h2>About Robot:</h2>
+        <p class="fs-6">The primary goal of this project is to design and develop an autonomous fire-fighting robot
+            vehicle capable of detecting, approaching, and extinguishing fires without the need for
+            human intervention.</p>
+            <p>
+                In hazardous environments such as industrial sites, warehouses, or
+                residential buildings during fire outbreaks, early detection and suppression are critical to
+                minimizing damage and saving lives. However, these situations often pose significant risks
+                to firefighters, such as exposure to toxic gases, extreme heat, and structural instability. 
+            </p>
+            
+            <p>
+                This autonomous robot is designed to mitigate these risks by identifying fire sources in a
+                defined area, moving towards the fire autonomously, and then extinguishing the flames using
+                a water pump mechanism. By integrating fire detection sensors, motors for mobility, and a
+                water-based suppression system, the robot can act swiftly and efficiently in emergency
+                scenarios.
+                Such a system is ideal for environments where rapid response is essential but human access
+                may be delayed or dangerous. In industrial facilities with high fire risks, this robot can patrol
+                designated areas, continuously scanning for fire hazards. In residential or commercial spaces,
+                the robot can act as a first responder, tackling smaller fires before they escalate.
+               
+            </p>
+             <p>
+            This project not only highlights the use of IoT technology for real-world applications but
+            also showcases the potential of robotics in life-saving operations.</p>
+      </div>
+            <!-- About robot ENDS-->
+
+            <!-- Objectives -->
+     <div class="mx-5">
+<h2>
+    Objectives:
+</h2>
+<p>
+    <ul>
+        <li><b>Autonomous Fire Detection:</b></li>
+        <p>
+            The robot uses three infrared flame sensors, strategically positioned to cover more
+than a 180-degree field of view. These sensors detect fire by sensing infrared radiation
+emitted from flames. By covering a wide angle, the sensors ensure that the robot can
+detect fire from various directions without needing to rotate frequently. Once the flame
+is detected, the sensors send signals to the Arduino, which triggers the fire-fighting
+mechanism.
+        </p>
+        <li><b>Automated Movement:</b></li>
+        <p>
+            After detection, the robot autonomously navigates towards the fire using the motor
+control system. The L298 motor driver and the four B.O motors provide smooth and
+responsive movement. The robot calculates the direction based on which sensor
+detects the fire and adjusts its path accordingly. This ensures that the robot heads
+directly towards the fire source without human input, taking full advantage of its wide
+sensor coverage.
+        </p>
+        <li><b>Fire Suppression:</b></li>
+        <p>
+            Once the robot reaches the vicinity of the fire, the servo motor adjusts the water nozzle
+based on the fire's location. The wide sensor coverage ensures that the robot
+approaches the fire accurately, and the water pump is activated to spray water in a argeted manner. The system continues to operate until the sensors detect no further
+fire, ensuring effective fire suppression.
+        </p>
+        <li><b>Minimal Human Intervention:</b></li>
+        <p>
+            With the wide-angle coverage of the infrared flame sensors and autonomous
+movement, the robot performs its tasks with minimal human involvement. This
+reduces the risk of exposure to hazardous conditions, as the robot can independently
+detect, move to, and suppress fires without needing manual control, making it a safe
+and efficient solution for fire-fighting in risky environments.
+        </p>
+
+    </ul>
+</p>
+</div>
+            <!-- Objectives ENDS -->
+
+
+<!-- System Design and Architecture -->
+            <div class="mx-5">
+                <h2>System Design and Architecture:</h2>
+                <h3>Component List</h3>
+                <ul>
+                    <li>Flame sensors - 3</li>
+                    <li>Arduino UNO</li>
+                    <li>BO motors - 4</li>
+                    <li>Wheels - 4</li>
+                    <li>L298 Motor driver</li>
+                    <li>Solder-less Breadboard</li>
+                    <li>Mini servo</li>
+                    <li>5-9 V Water pump + pipe</li>
+                    <li>Water tank / bottle</li>
+                    <li>3.7 V batteries (18650) - 2</li>
+                    <li>Jumper wires</li>
+                    <li>TIP-122 Transistor</li>
+                    <li>104 uf capacitor</li>
+                    <li>1K Resister</li>
+                </ul>
+
+                <img src="fire_fighting_robot_circuit_desgin.png" alt="fire_fighting_robot_circuit_design" class="img-fluid rounded ">
+            </div>
+<div>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <h3 class="mx-4">Code:</h3>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <style>
+                    pre {
+                      background-color: #f4f4f4; /* Light gray background */
+                      padding: 10px;
+                      border-radius: 5px;
+                      overflow-x: auto; /* Enable horizontal scrolling if the code is too wide */
+                      margin-left: 1%;
+                      margin-right: 1%;
+                    }
+                    code {
+                      font-family: Consolas, "Courier New", monospace; /* Monospace font for better readability */
+                      color: #c7254e; /* Code-specific text color */
+                    }
+                  </style>
+            
+                  <pre class="rounded"><code>
+            #define enA 10      // Enable1 L298 Pin enA
+            #define in1 9       // Motor1 L298 Pin in1
+            #define in2 8       // Motor1 L298 Pin in2
+            #define in3 7       // Motor2 L298 Pin in3
+            #define in4 6       // Motor2 L298 Pin in4
+            #define enB 5       // Enable1 L298 Pin enB
+            
+            #define ir_R A0     // Right IR sensor
+            #define ir_F A1     // Front IR sensor
+            #define ir_L A2     // Left IR sensor
+            #define servoPin A4 // Servo pin for water pump
+            #define pump A5     // Water pump pin
+            
+            int fireThreshold = 900;      // Sensitivity threshold for detecting fire
+            int stopRangeThreshold = 600;  // Stop range threshold to ensure robot moves closer before stopping
+            
+            void setup() {
+                Serial.begin(9600); // Start serial communication
+                pinMode(ir_R, INPUT); // Set fire sensor pins as input
+                pinMode(ir_F, INPUT);
+                pinMode(ir_L, INPUT);
+                pinMode(enA, OUTPUT); // Motor control pins as output
+                pinMode(in1, OUTPUT);
+                pinMode(in2, OUTPUT);
+                pinMode(in3, OUTPUT);
+                pinMode(in4, OUTPUT);
+                pinMode(servoPin, OUTPUT); // Set servo pin as output
+                pinMode(pump, OUTPUT);     // Set pump pin as output
+            
+                // Enable the motors
+                analogWrite(enA, 255); // Set motor speed to maximum
+                analogWrite(enB, 255);
+            }
+            
+            void loop() {
+                int s1 = analogRead(ir_R); // Read right sensor
+                int s2 = analogRead(ir_F); // Read front sensor
+                int s3 = analogRead(ir_L); // Read left sensor
+            
+                // Print sensor readings for debugging
+                Serial.print("Right: ");
+                Serial.print(s1);
+                Serial.print(" | Front: ");
+                Serial.print(s2);
+                Serial.print(" | Left: ");
+                Serial.println(s3);
+            
+                // Control logic
+                if (s2 < fireThreshold) {  // Fire detected in front
+                    if (s2 > stopRangeThreshold) { // Fire detected but outside stop range
+                        moveForward();  // Move towards the fire
+                    } else { // Stop and activate water pump when within range
+                        stopMotors();
+                        activatePump();  // Spray water
+                    }
+                } else if (s1 < fireThreshold) { // Fire detected on the right
+                    alignLeft();  // Turn left and adjust alignment
+                } else if (s3 < fireThreshold) { // Fire detected on the left
+                    alignRight();  // Turn right and adjust alignment
+                } else { // No fire detected
+                    stopMotors();
+                    stopPump();  // Ensure pump is turned off when no fire
+                }
+            
+                delay(100); // Delay for stability
+            }
+            
+            void activatePump() {
+                digitalWrite(pump, HIGH); // Activate the pump
+            
+                // Continuously move servo from 50 degrees to 130 degrees until the fire stops
+                while (analogRead(ir_F) < fireThreshold) {
+                    // Move the servo from 50 degrees to 130 degrees
+                    for (int angle = 50; angle <= 130; angle += 3) {
+                        servoPulse(servoPin, angle);
+                    }
+            
+                    // Move the servo back from 130 degrees to 50 degrees
+                    for (int angle = 130; angle >= 50; angle -= 3) {
+                        servoPulse(servoPin, angle);
+                    }
+            
+                    // Check again if the fire is still detected before repeating the loop
+                    if (analogRead(ir_F) >= fireThreshold) {
+                        break; // Exit the loop if fire is no longer detected
+                    }
+                }
+            
+                stopPump(); // Stop the pump when fire is no longer detected
+            }
+            
+            
+            
+            void stopPump() {
+                digitalWrite(pump, LOW); // Deactivate the pump
+            }
+            
+            void servoPulse(int pin, int angle) {
+                int pwm = (angle * 11) + 500; // Convert angle to microseconds
+                digitalWrite(pin, HIGH);
+                delayMicroseconds(pwm);
+                digitalWrite(pin, LOW);
+                delay(50); // Refresh cycle of servo
+            }
+            
+            // Function to move the robot forward
+            void moveForward() {
+                digitalWrite(in1, LOW);  // Right motor forward
+                digitalWrite(in2, HIGH); // Right motor backward
+                digitalWrite(in3, LOW);  // Left motor forward
+                digitalWrite(in4, HIGH); // Left motor backward
+            }
+            
+            // Function to turn slightly left and re-align when fire is detected on the right
+            </code></pre>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+   
+
+</div>
+            <ul>
+                <li><b>Fire Detection Subsystem:</b></li>
+                <p>
+                    Three infrared flame sensors are integrated with the Arduino Uno, covering more than
+a 180-degree angle. These sensors continuously monitor the environment for signs of
+fire within their range. When any of the sensors detect fire, they send a signal to the
+Arduino, which initiates the fire-fighting sequence. The system then activates the
+motor control to direct the robot towards the fire based on the sensor input. Once in
+position, the fire suppression mechanism is triggered to extinguish the fire.
+                </p>
+                <li><b>Navigation Subsystem:</b></li>
+                <p>
+                    The Arduino controls the movement of the robot via the L298 motor driver. The four
+B.O motors are powered to move the robot towards the fire. The movement is
+designed to be automatic, with predefined algorithms to approach the fire from the
+most efficient path.
+The robot uses differential steering to navigate, meaning the left and right wheels can
+move at different speeds or in different directions, allowing the robot to turn on the
+spot.
+                </p>
+                <li><b>Fire Suppression Subsystem:</b></li>
+                <p>
+                    Once the robot reaches the fire, the Arduino triggers the servo motor to adjust the
+water nozzle's angle. The pump is then activated using the TIP122 transistor, and
+water is sprayed over the fire until it is extinguished. The servo motor ensures that the
+water spray is directed precisely at the source of the fire.
+                </p>
+
+            </ul>
+            <!-- System Design and Architecture ends here-->
+
+            <!-- Working Principle -->
+             <div class="p-5">
+                <h2>  Working Principle </h2>
+<ul>
+    <li><b>Initialization:</b></li>
+    <p>
+        When the robot is powered on, all components (sensors, motors, and actuators) are
+initialized, and the robot begins scanning its environment using the three flame
+sensors. These sensors continuously monitor for fire in a wide field of view, covering
+more than 180 degrees. The robot remains idle, awaiting any fire detection signal to
+trigger further actions.
+    </p>
+    <li><b>Fire Detection:</b></li>
+    <p>
+        If one or more of the infrared flame sensors detects a fire, the Arduino processes the
+signal. It identifies the location of the fire based on which sensor is triggered and
+calculates the distance between the robot and the fire. The Arduino then sends
+commands to the motor driver to move the robot toward the fire’s direction, starting
+the fire-fighting sequence.
+    </p>
+    <li><b>Navigation:</b></li>
+    <p>
+        The four B.O motors, controlled by the L298 motor driver, propel the robot towards
+the detected fire. Using the data from the sensors, the robot adjusts its movement to
+ensure it is heading directly towards the source of the fire. It continues moving until it
+comes within a predefined range where it can effectively suppress the fire.
+    </p>
+    <li><b>Targeting:</b></li>
+    <p>
+        Once the robot reaches the vicinity of the fire, the Arduino controls the servo motor to
+adjust the water nozzle’s angle. This ensures that the nozzle is aimed directly at the
+fire for precise water delivery. The targeting system allows for optimal use of water,
+making sure the spray reaches the fire’s core.
+    </p>
+    <li><b>Fire Suppression:</b></li>
+    <p>
+        After positioning the nozzle, the water pump is activated via the TIP122 transistor.
+The pump draws water from the onboard reservoir and sprays it over the fire through
+the nozzle. This process continues until the sensors no longer detect any flames,
+indicating that the fire has been extinguished.
+    </p>
+    <li><b>Completion:</b></li>
+    <p>
+        Once the fire is extinguished, the system resets itself to its idle state. The robot stops
+moving, the water pump shuts off, and the flame sensors resume scanning the
+environment for any new fire outbreaks, ready to initiate the sequence again if needed.
+    </p>
+</ul>
+             </div>
+
+                        <!-- Working Principle ends here -->
+
+
+                        <!-- Applications -->
+
+                        <div class="mx-5">
+                            <h2>Applications</h2>
+
+                            <ul>
+                                <li><b>Industrial Fire Safety: </b>Can be used in factories, warehouses, and other industrial
+                                    environments where fire hazards are common.</li>
+                                <li><b>Residential Fire Safety:</b>Deployed in large homes or buildings, it can autonomously
+                                    respond to fires in areas difficult for human access.</li>
+                                <li><b>Laboratory Fire Suppression:</b>Ideal for scientific labs where fires from chemical
+                                    reactions can occur, minimizing human risk.</li>
+                                <li><b>Public Spaces: </b>Can be used in public spaces such as malls or airports where fire
+                                    hazards may require quick action.</li>
+                            </ul>
+                        </div>
+                        <!-- Applications Ends here  -->
+
+                        <!-- Conclusion -->
+<div class="mx-5 mt-5">
+    <h2>Conclusion</h2>
+    <p>
+        This fire-fighting robot vehicle exemplifies the synergy between IoT, automation, and sensor
+technology to address fire hazards in real-world scenarios. By leveraging three infrared
+flame sensors, the robot autonomously scans its environment for fire, even across a wide
+angle, ensuring comprehensive coverage without requiring human supervision. Upon
+detecting a fire, the system uses motorized control to navigate towards the source,
+demonstrating intelligent decision-making and precise movements in complex environments.
+The incorporation of a servo-controlled water nozzle allows for targeted fire suppression,
+reducing water wastage and ensuring efficient extinguishing.
+    </p>
+    <p>
+        The robot's reliance on low-cost components like B.O motors, an L298 motor driver, and an
+Arduino Uno make it affordable and accessible for educational and prototyping purposes.
+The simplicity of the design ensures ease of replication, allowing others to build similar
+robots for diverse applications. Moreover, its adaptability means the system can be scaled or
+modified to handle larger fires, be equipped with different sensors, or operate in more
+challenging environments. This project provides a robust foundation for developing
+autonomous fire-fighting systems in hazardous industrial sites, remote locations, or areas
+inaccessible to humans, significantly improving safety and response times in high-risk
+environments.
+    </p>
+
+</div>
+                       
+                        <!-- Conclusion -->
+   <div class="p-4">
+    <h2>Video</h2>
+    <video class="object-fit-cover rounded" controls style=" max-width: 100%; height: auto;">
+        <source src="ffr.mp4" type="video/mp4" >
+    </video>
+    <br>Fire Fighting Robot vehicle in Working
+
+   </div>
+   
+
+      <footer>
+        <div class="contact-icons text-center bg-success-subtle rounded">
+
+          <a href="https://saurabhjadli.github.io/fb.html" target="_blank">
+          <i style="font-size: 50px; padding: 20px;" class="fab fa-facebook-f"></i></a>
+  
+          <a href="https://github.com/SaurabhJadli" target="_blank">
+          <i style="font-size: 50px; padding: 20px;" class="fab fa-github"></i></a>
+  
+          <a href="https://www.instagram.com/saurabh_jadli_/" target="_blank">
+          <i style="font-size: 50px; padding: 20px;" class="fab fa-instagram"></i></a>
+  
+          <a href="https://www.linkedin.com/in/saurabh-jadli-373565233?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsMuGOTkXTxSM8uN4n0hLZw%3D%3D" target="_blank">
+          <i style="font-size: 50px; padding: 20px;" class="fab fa-linkedin"></i></a>
+  
+          <a href="https://saurabhjadli.github.io/twi.html" target="_blank">
+          <i style="font-size: 50px; padding: 20px;" class="fab fa-twitter"></i></a>
+  
+  </div>
+  
+      </footer>
+      
+  </body>
+</html>
